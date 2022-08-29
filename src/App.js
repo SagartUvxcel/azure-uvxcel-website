@@ -78,7 +78,7 @@ function App() {
     window.addEventListener("scroll", onScroll);
     window.addEventListener("scroll", reveal);
     if (location.pathname !== oldPath) {
-      setTimeout(() => removeRevealActive(), 620);
+      setTimeout(() => removeRevealActive(), 601);
     }
     return () => {
       window.removeEventListener("scroll", onScroll);

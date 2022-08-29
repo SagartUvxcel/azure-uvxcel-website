@@ -1088,7 +1088,7 @@ footer .icons:hover {
 }
 
 .overflowHide-x{
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .reveal.active {
