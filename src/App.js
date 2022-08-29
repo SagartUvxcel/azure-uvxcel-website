@@ -1,4 +1,10 @@
-import { useEffect, useState, useReducer, createContext } from "react";
+import {
+  useEffect,
+  useState,
+  useReducer,
+  createContext,
+  useCallback,
+} from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import Navbar from "./1.Navbar/Navbar";
@@ -65,7 +71,7 @@ function App() {
     }
   }
 
-  const removeRevealActive = () => {
+  const removeRevealActive = useCallback(() => {
     var reveals = document.querySelectorAll(".reveal");
     for (var i = 0; i < reveals.length; i++) {
       if (reveals[i].classList.contains("active")) {
@@ -73,7 +79,7 @@ function App() {
       }
     }
     setOldPath(location.pathname);
-  };
+  }, [location]);
   useEffect(() => {
     window.addEventListener("scroll", onScroll);
     window.addEventListener("scroll", reveal);
@@ -84,7 +90,7 @@ function App() {
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("scroll", reveal);
     };
-  }, [location, removeRevealActive]);
+  }, [location, removeRevealActive, oldPath]);
 
   return (
     <>

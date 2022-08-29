@@ -18,7 +18,7 @@ const Careers = () => {
   const [distinctLocations, setDistinctLocations] = useState([]);
   const [pageCount, setPageCount] = useState(0);
   const [jobLocation, setJobLocation] = useState("all");
-  const [searchFocus, setSearchFocus] = useState(false);
+  // const [searchFocus, setSearchFocus] = useState(false);
   const searchInput = useRef();
   const searchPTag = useRef();
   const searchContainerRef = useRef();
@@ -30,7 +30,6 @@ const Careers = () => {
   ];
 
   let textArrayIndex = 0;
-  var myTimeout1, myTimeout2;
 
   const downToUp = () => {
     if (searchArray[textArrayIndex]) {
@@ -38,9 +37,10 @@ const Careers = () => {
 
       searchPTag.current.classList.remove("removePlace");
       searchPTag.current.classList.add("setPlace");
-      if (!searchFocus) {
-        myTimeout1 = setTimeout(moveUp, 2000);
-      }
+      // if (!searchFocus) {
+      //   myTimeout1 = setTimeout(moveUp, 2000);
+      // }
+      setTimeout(moveUp, 2000);
     }
   };
 
@@ -52,9 +52,10 @@ const Careers = () => {
     } else {
       textArrayIndex++;
     }
-    if (!searchFocus) {
-      myTimeout2 = setTimeout(downToUp, 1000);
-    }
+    // if (!searchFocus) {
+    //   myTimeout2 = setTimeout(downToUp, 1000);
+    // }
+    setTimeout(downToUp, 1000);
   };
 
   let jobsPerPage = 3;
@@ -130,12 +131,12 @@ const Careers = () => {
     return daysDiff === 0
       ? " Today"
       : daysDiff === 1
-        ? daysDiff + " day ago"
-        : daysDiff > 59
-          ? " 2 months ago"
-          : daysDiff > 29
-            ? " 1 month ago"
-            : daysDiff + " days ago";
+      ? daysDiff + " day ago"
+      : daysDiff > 59
+      ? " 2 months ago"
+      : daysDiff > 29
+      ? " 1 month ago"
+      : daysDiff + " days ago";
   };
 
   // Validation for email.
@@ -181,129 +182,127 @@ const Careers = () => {
     // eslint-disable-next-line
   }, [searchValue]);
 
-  return (<>
-    <div className="career-top-container">
-      <div className="overlay"></div>
+  return (
+    <>
+      <div className="career-top-container">
+        <div className="overlay"></div>
 
-      <section className="container-fluid career-section-top ">
-        <div className="careers padding-and-height-for-main-container">
-          <div className="container ">
-            <h1 className="primary-color-heading fw-bold text-center mb-4 active fade-in">
-              Career Opportunities
-            </h1>
+        <section className="container-fluid career-section-top ">
+          <div className="careers padding-and-height-for-main-container">
+            <div className="container ">
+              <h1 className="primary-color-heading fw-bold text-center mb-4 active fade-in">
+                Career Opportunities
+              </h1>
 
-            <div className="row justify-content-center ">
-              <div className="col-lg-4 col-md-6 px-4-on-small-screen active fade-left">
-                {/* Location filter */}
-                <select
-                  className="form-select"
-                  onChange={(e) => {
-                    getAllJobs(e.target.value, searchValue);
-                    setJobLocation(e.target.value);
-                  }}
-                >
-                  <option value="all">All locations</option>
-                  {distinctLocations.map((location) => {
-                    return (
-                      <option key={location} value={location}>
-                        {location}
-                      </option>
-                    );
-                  })}
-                </select>
-              </div>
-              <div className="col-lg-6 col-md-6 active fade-right">
-                <div className="container">
-                  {/* Search by designation filter*/}
-                  <div
-                    className="search-container mt-3 mt-md-0"
-                    ref={searchContainerRef}
+              <div className="row justify-content-center ">
+                <div className="col-lg-4 col-md-6 px-4-on-small-screen active fade-left">
+                  {/* Location filter */}
+                  <select
+                    className="form-select"
+                    onChange={(e) => {
+                      getAllJobs(e.target.value, searchValue);
+                      setJobLocation(e.target.value);
+                    }}
                   >
-                    <p ref={searchPTag}></p>
-                    <input
-                      className="search-input"
-                      type="text"
-                      value={searchValue}
-                      onChange={(e) => setSearchValue(e.target.value)}
-                      ref={searchInput}
-                    />
-                    <button>
-                      <FiSearch />
-                    </button>
-                  </div>
+                    <option value="all">All locations</option>
+                    {distinctLocations.map((location) => {
+                      return (
+                        <option key={location} value={location}>
+                          {location}
+                        </option>
+                      );
+                    })}
+                  </select>
                 </div>
-              </div>
-            </div>
-            <div className="row mt-4 justify-content-center ">
-              {/* All Jobs */}
-              <div className="col-lg-4 col-md-6 active fade-left">
-                <AllJobs
-                  jobs={jobs}
-                  loadCurrentJob={loadCurrentJob}
-                  daysCount={daysCount}
-                />
-                <div className="row py-2">
-                  <div className="col-12">
-                    <Pagination
-                      pageCount={pageCount}
-                      handlePageClick={handlePageClick}
-                    />
-                  </div>
-                </div>
-              </div>
-              <hr
-                className="d-md-none d-block"
-                style={{ margin: "1rem 0rem" }}
-                id="job"
-              />
-              <div className="col-lg-6  col-md-6 active fade-right">
-                <div className="container-fluid job-description">
-                  <div className="row">
-                    <div className="col-md-12">
-                      {/* Job description section */}
-                      <JobDescription currentJob={currentJob} />
+                <div className="col-lg-6 col-md-6 active fade-right">
+                  <div className="container">
+                    {/* Search by designation filter*/}
+                    <div
+                      className="search-container mt-3 mt-md-0"
+                      ref={searchContainerRef}
+                    >
+                      <p ref={searchPTag}></p>
+                      <input
+                        className="search-input"
+                        type="text"
+                        value={searchValue}
+                        onChange={(e) => setSearchValue(e.target.value)}
+                        ref={searchInput}
+                      />
+                      <button>
+                        <FiSearch />
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+              <div className="row mt-4 justify-content-center ">
+                {/* All Jobs */}
+                <div className="col-lg-4 col-md-6 active fade-left">
+                  <AllJobs
+                    jobs={jobs}
+                    loadCurrentJob={loadCurrentJob}
+                    daysCount={daysCount}
+                  />
+                  <div className="row py-2">
+                    <div className="col-12">
+                      <Pagination
+                        pageCount={pageCount}
+                        handlePageClick={handlePageClick}
+                      />
+                    </div>
+                  </div>
+                </div>
+                <hr
+                  className="d-md-none d-block"
+                  style={{ margin: "1rem 0rem" }}
+                  id="job"
+                />
+                <div className="col-lg-6  col-md-6 active fade-right">
+                  <div className="container-fluid job-description">
+                    <div className="row">
+                      <div className="col-md-12">
+                        {/* Job description section */}
+                        <JobDescription currentJob={currentJob} />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-            {/* Job application form link */}
-            <div className="container">
-              <div className="row justify-content-center">
-                <div className="col-lg-10 ">
-                  <p className="fw-bold mt-5 text-white form-link-text reveal fade-up">
-                    Interested candidates to send their profile to hr@uvxcel.com
-                    OR use the Link below to fill the Candidate Information
-                    Form.
-                    <br />
-                    <NavLink
-                      className="candidate-form-link"
-                      to="/applyform"
-                    >
-                      Candidate Form
-                    </NavLink>
-                  </p>
+              {/* Job application form link */}
+              <div className="container">
+                <div className="row justify-content-center">
+                  <div className="col-lg-10 ">
+                    <p className="fw-bold mt-5 text-white form-link-text reveal fade-up">
+                      Interested candidates to send their profile to
+                      hr@uvxcel.com OR use the Link below to fill the Candidate
+                      Information Form.
+                      <br />
+                      <NavLink className="candidate-form-link" to="/applyform">
+                        Candidate Form
+                      </NavLink>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Subscribe to newsletter and updates section */}
+              <div className="row  justify-content-center">
+                <div className="col-lg-10 col-12">
+                  <NewsLetter
+                    onSubmit={onSubmit}
+                    onEmailChange={onEmailChange}
+                    email={email}
+                    emailErr={emailErr}
+                  />
                 </div>
               </div>
             </div>
-
-            {/* Subscribe to newsletter and updates section */}
-            <div className="row  justify-content-center">
-              <div className="col-lg-10 col-12">
-                <NewsLetter
-                  onSubmit={onSubmit}
-                  onEmailChange={onEmailChange}
-                  email={email}
-                  emailErr={emailErr}
-                />
-              </div>
-            </div>
           </div>
-        </div>
-      </section>
-    </div>
-  </>
+        </section>
+      </div>
+    </>
   );
 };
 

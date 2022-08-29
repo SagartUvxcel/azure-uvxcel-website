@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import img from "../images/uvxcel.png";
-import { GrMenu } from "react-icons/gr";
-import { GiHamburgerMenu } from "react-icons/gi";
+import {} from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
+import { GrMenu } from "react-icons/gr";
 import indiaFlag from "../images/indian flag icon.png";
 import malaysiaFlag from "../images/malaysia flag icon.png";
 

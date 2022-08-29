@@ -1,5 +1,5 @@
 import React from "react";
-import { BsLinkedin, BsGithub, BsEnvelope, BsTelephone } from "react-icons/bs";
+import { BsLinkedin, BsEnvelope, BsTelephone } from "react-icons/bs";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import logo from "../images/footer-logo.png";

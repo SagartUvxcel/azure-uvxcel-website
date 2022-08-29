@@ -1,5 +1,5 @@
-import React from 'react'
-import { AiOutlineMail } from "react-icons/ai"
+import React from "react";
+// import { AiOutlineMail } from "react-icons/ai"
 import logo1 from "./images/smartrr.png";
 import logo2 from "./images/bestol.png";
 import logo3 from "./images/uttr.jpg";
@@ -8,12 +8,12 @@ import logo5 from "./images/datagridzlogo2-1.png";
 import logo6 from "./images/nortek.png";
 
 const Csr = () => {
-    return (
-        <div classNameName="container ">
-            {/* <div classNameName="row pb-5">
+  return (
+    <div classNameName="container ">
+      {/* <div classNameName="row pb-5">
                 <h1 classNameName='text-center'>Corporate Social Responsibility Company Policy</h1>
             </div> */}
-            {/* <div classNameName="row">
+      {/* <div classNameName="row">
 
                 <h2 classNameName='py-2'>What is corporate social responsibility?</h2>
                 <p>Our Corporate Social Responsibility (CSR) company policy outlines our efforts to give back to the world as it gives to us.</p>
@@ -85,9 +85,9 @@ const Csr = () => {
 
             </div> */}
 
-            <h1>hello</h1>
+      <h1>hello</h1>
 
-            {/* <div classNameName="row align-items-center h-100">
+      {/* <div classNameName="row align-items-center h-100">
                 <div classNameName="container rounded">
                     <div classNameName="slider">
                         <div classNameName="logos">
@@ -135,36 +135,65 @@ const Csr = () => {
                 </div>
             </div> */}
 
+      <section className="slide-option">
+        <div id="infinite" className="highway-slider">
+          <div className="container highway-barrier">
+            <ul className="highway-lane">
+              <li className="highway-car">
+                {" "}
+                <img src={logo1} alt="..." />
+              </li>
+              <li className="highway-car">
+                {" "}
+                <img src={logo2} alt="..." />
+              </li>
+              <li className="highway-car">
+                {" "}
+                <img src={logo3} alt="..." />
+              </li>
+              <li className="highway-car">
+                {" "}
+                <img src={logo4} alt="..." />
+              </li>
+              <li className="highway-car">
+                {" "}
+                <img src={logo5} alt="..." />
+              </li>
+              <li className="highway-car">
+                {" "}
+                <img src={logo6} alt="..." />
+              </li>
 
-
-            <section className="slide-option">
-                <div id="infinite" className="highway-slider">
-                    <div className="container highway-barrier">
-                        <ul className="highway-lane">
-                            <li className="highway-car"> <img src={logo1} alt="..." /></li>
-                            <li className="highway-car"> <img src={logo2} alt="..." /></li>
-                            <li className="highway-car"> <img src={logo3} alt="..." /></li>
-                            <li className="highway-car"> <img src={logo4} alt="..." /></li>
-                            <li className="highway-car"> <img src={logo5} alt="..." /></li>
-                            <li className="highway-car"> <img src={logo6} alt="..." /></li>
-
-                            <li className="highway-car"> <img src={logo1} alt="..." /></li>
-                            <li className="highway-car"> <img src={logo2} alt="..." /></li>
-                            <li className="highway-car"> <img src={logo3} alt="..." /></li>
-                            <li className="highway-car"> <img src={logo4} alt="..." /></li>
-                            <li className="highway-car"> <img src={logo5} alt="..." /></li>
-                            <li className="highway-car"> <img src={logo6} alt="..." /></li>
-
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-
-
-
+              <li className="highway-car">
+                {" "}
+                <img src={logo1} alt="..." />
+              </li>
+              <li className="highway-car">
+                {" "}
+                <img src={logo2} alt="..." />
+              </li>
+              <li className="highway-car">
+                {" "}
+                <img src={logo3} alt="..." />
+              </li>
+              <li className="highway-car">
+                {" "}
+                <img src={logo4} alt="..." />
+              </li>
+              <li className="highway-car">
+                {" "}
+                <img src={logo5} alt="..." />
+              </li>
+              <li className="highway-car">
+                {" "}
+                <img src={logo6} alt="..." />
+              </li>
+            </ul>
+          </div>
         </div>
-    )
-}
+      </section>
+    </div>
+  );
+};
 
-export default Csr
+export default Csr;
