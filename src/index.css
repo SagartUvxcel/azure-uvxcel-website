@@ -62,7 +62,8 @@
 
 /* Styles for Navbar.js */
 .navbar {
-  background: white !important;
+  /* background: white !important; */
+  background: #69b46e !important;
   box-shadow: 0 0 4px 0;
 }
 
