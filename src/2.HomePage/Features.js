@@ -20,7 +20,7 @@ const Features = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-5 overflowHide-x">
+            <div className="col-md-5 overflowHide">
               <div className="feature-img reveal fade-right">
                 <img
                   src="https://www.socialbuzzing.co.uk/wp-content/uploads/2018/03/Seven-Characteristics-of-Highly-Effective-Digital-Marketing-Team.png"
@@ -31,7 +31,7 @@ const Features = () => {
           </div>
         </div>
       </div>
-      <div className="container-fluid margin-top-up pb-5 overflowHide-x">
+      <div className="container-fluid margin-top-up pb-5 overflowHide">
         <div className="row">
           <div className="col-sm-12 col-lg-10 offset-lg-1">
             <div className="row">

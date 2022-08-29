@@ -9,7 +9,7 @@ const VisionMission = () => {
         <h2 className="mb-4 fw-bold primary-color-heading text-center-smallScreen reveal fade-bottom">
           Mission, Vision &amp; Values
         </h2>
-        <div className="row d-flex justify-content-center overflowHide-x">
+        <div className="row d-flex justify-content-center overflowHide">
           {visionMissionData.map((data, index) => {
             return (
               <div

@@ -1087,7 +1087,7 @@ footer .icons:hover {
   transition: fade 1s ease-in-out;
 }
 
-.overflowHide-x{
+.overflowHide{
   overflow: hidden;
 }
 

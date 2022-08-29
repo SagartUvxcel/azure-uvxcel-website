@@ -8,7 +8,7 @@ const AboutUsShort = () => {
       <h1 className="primary-color-heading fw-bold mb-4 text-center-smallScreen reveal fade-bottom">
         About us
       </h1>
-      <div className="row overflowHide-x">
+      <div className="row overflowHide">
         <div className="col-lg-7 order-lg-1 order-2 mt-lg-0 mt-5 reveal fade-left">
           <div className="about-text home-about-text pe-lg-5">
             <p>
