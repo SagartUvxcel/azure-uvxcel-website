@@ -3,7 +3,7 @@ import { iconsData } from "./iconsData";
 
 const TechIcons = () => {
   return (
-    <div className="container py-5 technology-details reveal fade-up">
+    <div className="container py-5 technology-details">
       <div className="row">
         {iconsData.map((data, index) => {
           return (

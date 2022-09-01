@@ -407,7 +407,7 @@
 }
 
 /* Styles for Careers.js */
-.careers .primary-color-heading {
+.careers .careerPage-heading {
   color: #fff;
 }
 
@@ -502,6 +502,11 @@
   visibility: hidden;
 }
 
+.hide{
+  visibility: hidden;
+}
+
+
 @keyframes upMove {
   0% {
     transform: translateY(0);
@@ -546,6 +551,11 @@
 }
 
 /* Jobs and job description */
+.marginOnscroll {
+  margin: 6rem 0;
+
+}
+
 .job-card .card-body p {
   font-size: 12px;
   margin-bottom: 4px !important;
@@ -673,6 +683,7 @@ span {
 
 #mySelect {
   width: 116px !important;
+  text-align: start;
   border: 1px solid darkgray;
 }
 
@@ -691,7 +702,7 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  background: black;
+  background: var(--primary);
   padding-top: 5rem;
 }
 
@@ -1076,11 +1087,6 @@ footer .icons:hover {
 
 /* Animation */
 
-/* .para-bottom {
-  opacity: 0;
-  animation: fade-bottom 1.2s both 0.7s;
-} */
-
 .reveal {
   position: relative;
   opacity: 0;
@@ -1095,9 +1101,6 @@ footer .icons:hover {
   opacity: 1;
 }
 
-/* .active.fade-in {
-  animation: headingAni 1.2s both;
-} */
 .active.fade-blink {
   animation: fadeBlink 1s ease;
 }
@@ -1122,7 +1125,7 @@ footer .icons:hover {
   animation: fade-right 0.6s ease;
 }
 
-@keyframes fade {
+/* @keyframes fade {
   0% {
     opacity: 0;
     transform: scale(0);
@@ -1136,7 +1139,7 @@ footer .icons:hover {
     opacity: 1;
     transform: scale(1);
   }
-}
+} */
 
 @keyframes fadeBlink {
   0% {
@@ -1213,6 +1216,8 @@ footer .icons:hover {
 }
 
 @media (max-width: 991px) {
+
+ 
   .text-center-smallScreen {
     text-align: center;
   }

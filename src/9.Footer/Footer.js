@@ -183,8 +183,8 @@ const Footer = () => {
         </div>
         <div className="row justify-content-around mt-5">
           <hr />
-          <div className="col-lg-6 py-md-3">
-            <p>Copyright © uvXcel Pvt. Ltd. All Rights Reserved</p>
+          <div className="col-lg-6 py-md-3 fw-bold ">
+            <p className="text-white">Copyright © uvXcel Pvt. Ltd. All Rights Reserved</p>
           </div>
           <div className="col-lg-5 py-md-3"></div>
         </div>

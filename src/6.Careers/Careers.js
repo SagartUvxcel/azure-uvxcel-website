@@ -18,10 +18,10 @@ const Careers = () => {
   const [distinctLocations, setDistinctLocations] = useState([]);
   const [pageCount, setPageCount] = useState(0);
   const [jobLocation, setJobLocation] = useState("all");
-  // const [searchFocus, setSearchFocus] = useState(false);
   const searchInput = useRef();
   const searchPTag = useRef();
   const searchContainerRef = useRef();
+  const pagination = useRef();
 
   const searchArray = [
     "Search by Designation",
@@ -37,9 +37,6 @@ const Careers = () => {
 
       searchPTag.current.classList.remove("removePlace");
       searchPTag.current.classList.add("setPlace");
-      // if (!searchFocus) {
-      //   myTimeout1 = setTimeout(moveUp, 2000);
-      // }
       setTimeout(moveUp, 2000);
     }
   };
@@ -52,9 +49,6 @@ const Careers = () => {
     } else {
       textArrayIndex++;
     }
-    // if (!searchFocus) {
-    //   myTimeout2 = setTimeout(downToUp, 1000);
-    // }
     setTimeout(downToUp, 1000);
   };
 
@@ -74,7 +68,13 @@ const Careers = () => {
 
     // To set total page count based on jobs per page and total jobs. e.g. if total jobs = 20 and jobs per page = 5 then page count will be 4
     const totalJobsCount = totalJobs.data.length;
-    setPageCount(Math.ceil(totalJobsCount / jobsPerPage));
+    if (totalJobsCount === 0) {
+      pagination.current.classList.add("hide");
+    } else {
+      pagination.current.classList.remove("hide");
+      setPageCount(Math.ceil(totalJobsCount / jobsPerPage));
+    }
+    // const totalPage = Math.ceil(totalJobsCount / jobsPerPage)
 
     // load first job for showing in job description section.
     if (totalJobsCount >= 1) {
@@ -108,6 +108,7 @@ const Careers = () => {
 
   // Function for making job active on click.
   const loadCurrentJob = async (id, e) => {
+    document.getElementById("job").classList.add("marginOnscroll");
     for (let job of jobs) {
       if (job._id === id) {
         setCurrentJob(job);
@@ -190,7 +191,7 @@ const Careers = () => {
         <section className="container-fluid career-section-top ">
           <div className="careers padding-and-height-for-main-container">
             <div className="container ">
-              <h1 className="primary-color-heading fw-bold text-center mb-4 active fade-in">
+              <h1 className="careerPage-heading fw-bold text-center mb-4 active fade-bottom">
                 Career Opportunities
               </h1>
 
@@ -245,7 +246,7 @@ const Careers = () => {
                     daysCount={daysCount}
                   />
                   <div className="row py-2">
-                    <div className="col-12">
+                    <div className="col-12" ref={pagination}>
                       <Pagination
                         pageCount={pageCount}
                         handlePageClick={handlePageClick}
@@ -255,7 +256,7 @@ const Careers = () => {
                 </div>
                 <hr
                   className="d-md-none d-block"
-                  style={{ margin: "1rem 0rem" }}
+                  // style={{ margin: "6rem 0rem" }}
                   id="job"
                 />
                 <div className="col-lg-6  col-md-6 active fade-right">

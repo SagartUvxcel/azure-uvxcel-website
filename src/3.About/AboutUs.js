@@ -7,7 +7,7 @@ import OurTeam from "./OurTeam";
 const AboutUs = () => {
   return (
     <section className="about padding-and-height-for-main-container">
-      <h1 className="primary-color-heading mb-4 text-center fw-bold active fade-in">
+      <h1 className="primary-color-heading mb-4 text-center fw-bold active fade-bottom">
         About Us
       </h1>
       <div className="container">
@@ -53,7 +53,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <VisionMission />
+      {/* <VisionMission /> */}
       <CurrentEngagement />
       <CustomersSection />
       <OurTeam />

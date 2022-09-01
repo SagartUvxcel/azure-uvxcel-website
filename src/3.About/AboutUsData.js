@@ -16,6 +16,14 @@ import SP from "../images/Team_member/Sumit_Patil.png";
 import SC from "../images/Team_member/Sadhana Chaudhari.png";
 import KP from "../images/Team_member/Kalyani Patil.png";
 import MI from "../images/Team_member/Mohd Ibrahim.png";
+import PO from "../images/Team_member/Priyanka Oge.png";
+import PS from "../images/Team_member/Prashant Shitole.png";
+import SY from "../images/Team_member/Sachin Yadav.png";
+import SHP from "../images/Team_member/Shubham Parab.png";
+import ST from "../images/Team_member/Sagar Tilekar.png";
+import GT from "../images/Team_member/Gayatri Tajane.png";
+import MD from "../images/Team_member/Mayuri Dudhe.png";
+import PG from "../images/Team_member/Prapti Gomekar.png";
 
 
 // Current engagement data
@@ -48,31 +56,41 @@ export const employees = [
     photo: CG,
     designation: "Founder-Director",
   },
-  { id: "uv002", name: "Monika Korde", photo: MK, designation: "HR Partner" },
-  { id: "uv003", name: "Aniket Patil", photo: AP, designation: "Software Engineer" },
+  { id: "uv002", name: "Director", photo: "", designation: "Director" },
+  { id: "uv003", name: "Monika Korde", photo: MK, designation: "HR Partner" },
+  { id: "uv004", name: "Aniket Patil", photo: AP, designation: "Software Engineer" },
   {
-    id: "uv004", name: "Ankit Mishra", photo: "", designation: "Software Engineer"
+    id: "uv005", name: "Ankit Mishra", photo: "", designation: "Software Engineer"
   },
   {
-    id: "uv005", name: "Dipak Lokhande", photo: DL, designation: "Junior Software Engineer",
+    id: "uv006", name: "Dipak Lokhande", photo: DL, designation: "Junior Software Engineer",
   },
   {
-    id: "uv009", name: "Sumit Patil", photo: SP, designation: "UI/UX Developer",
+    id: "uv007", name: "Sumit Patil", photo: SP, designation: "UI/UX Developer",
   },
   {
-    id: "uv010", name: "Sadhana Chaudhari", photo: SC, designation: "SQL Developer",
+    id: "uv08", name: "Sadhana Chaudhari", photo: SC, designation: "SQL Developer",
   },
-  { id: "uv006", name: "Priya Kadam", photo: PK, designation: "Software Engineer" },
-  { id: "uv007", name: "Sara Shaikh", photo: SS, designation: "Junior Software Engineer" },
+  { id: "uv009", name: "Priya Kadam", photo: PK, designation: "Software Engineer" },
+  { id: "uv010", name: "Sara Shaikh", photo: SS, designation: "Junior Software Engineer" },
   {
-    id: "uv008", name: "Abdul Rahim", photo: AR, designation: "Software Developer",
-  },
-  {
-    id: "uv011", name: "Kalyani Patil", photo: KP, designation: "Junior Software Engineer",
+    id: "uv011", name: "Abdul Rahim", photo: AR, designation: "Software Developer",
   },
   {
-    id: "uv012", name: "Mohammad Ibrahim", photo: MI, designation: "Junior Software Engineer",
+    id: "uv012", name: "Kalyani Patil", photo: KP, designation: "Junior Software Engineer",
   },
+  { id: "uv013", name: "Sagar Tilekar", photo: ST, designation: "Junior Software Engineer" },
+  {
+    id: "uv014", name: "Mohammad Ibrahim", photo: MI, designation: "Junior Software Engineer",
+  },
+  { id: "uv0015", name: "Priyanka Oge", photo: PO, designation: "Junior Software Engineer" },
+  { id: "uv016", name: "Sachin Yadav", photo: SY, designation: "Junior Software Engineer" },
+  { id: "uv017", name: "Prashant Shitole", photo: PS, designation: "Junior Software Engineer" },
+  { id: "uv018", name: "Shubham Parab", photo: SHP, designation: "Junior Software Engineer" },
+  { id: "uv019", name: "Gayatri Tajane", photo: GT, designation: "Junior Software Engineer" },
+  { id: "uv020", name: "Mayuri Dudhe", photo: MD, designation: "Junior Software Engineer" },
+  { id: "uv021", name: "Prapti Gomekar", photo: PG, designation: "Junior Software Engineer" },
+
 ];
 
 // Vision-mission data

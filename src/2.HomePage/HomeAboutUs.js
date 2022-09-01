@@ -1,10 +1,20 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { NavLink } from "react-router-dom";
 import aboutImg from "../images/home-about-img.png";
 
 const AboutUsShort = () => {
+
+  // const activateAnimation = () => {
+  //   const winScroll = document.innerwidth;
+  //   console.log(winScroll);
+  // };
+
+  // useEffect(() => {
+  //   activateAnimation();
+  // },[])
+
   return (
-    <section className="container pb-5 ">
+    <section className="container py-5 ">
       <h1 className="primary-color-heading fw-bold mb-4 text-center-smallScreen reveal fade-bottom">
         About us
       </h1>

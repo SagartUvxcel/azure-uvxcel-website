@@ -50,7 +50,7 @@ const AllJobs = ({ jobs, daysCount, loadCurrentJob }) => {
           </Link>
         ))
       ) : (
-        <h4 className="my-4 text-center primary-color-heading">
+        <h4 className="my-4 text-center text-white">
           No jobs found
         </h4>
       )}

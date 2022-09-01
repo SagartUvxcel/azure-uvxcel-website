@@ -113,7 +113,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <div className="country ">
+      {/* <div className="country ">
         <div className="btn-group dropstart active fade-right">
           <button
             type="button"
@@ -135,7 +135,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

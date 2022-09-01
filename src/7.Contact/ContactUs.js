@@ -38,7 +38,7 @@ const ContactUs = () => {
           <h5 className="text-uppercase primary-color-heading active fade-bottom">
             Let's Start a Conversation
           </h5>
-          <h1 className="fw-bold primary-color-heading active fade-in">
+          <h1 className="fw-bold primary-color-heading active fade-up">
             Contact Us
           </h1>
         </div>

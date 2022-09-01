@@ -86,7 +86,7 @@ const Home = () => {
           </button>
         </div>
       </section>
-      <Features />
+      {/* <Features /> */}
       <HomeAboutUs />
       <HomeServices />
       <HomeTechnologies />
