@@ -51,7 +51,7 @@ const Technologies = () => {
   return (
     <div className="technologies padding-and-height-for-main-container active fade-up">
       <div className="container ">
-        <h1 className="text-center primary-color-heading fw-bold active fade-bottom">
+        <h1 className="text-center primary-color-heading fw-bold ">
           Technologies we provide assistance in
         </h1>
         <div className="" style={{ overflow: "hidden", paddingTop: "4rem" }}>

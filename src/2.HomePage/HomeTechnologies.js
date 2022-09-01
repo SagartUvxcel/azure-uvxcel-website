@@ -6,7 +6,7 @@ import { BsArrowRight } from "react-icons/bs";
 const HomeTechnologies = () => {
   return (
     <section className="container home-technology-container py-5 ">
-      <h1 className="primary-color-heading fw-bold mb-4 text-center-smallScreen reveal fade-bottom">
+      <h1 className="primary-color-heading fw-bold mb-4 text-center-smallScreen reveal fade-up">
         Technologies
       </h1>
       <div className="row pt-3 ">

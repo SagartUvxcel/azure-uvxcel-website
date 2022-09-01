@@ -4,7 +4,7 @@ import { employees } from "./AboutUsData";
 const OurTeam = () => {
   return (
     <section className="container our-team py-5 ">
-      <h2 className="fw-bold primary-color-heading text-center-smallScreen reveal fade-bottom">
+      <h2 className="fw-bold primary-color-heading text-center-smallScreen reveal fade-up">
         Our Team
       </h2>
       <div className="row ">

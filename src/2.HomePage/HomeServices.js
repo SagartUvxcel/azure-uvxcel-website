@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 const HomeServices = () => {
   return (
     <section className="container home-services ">
-      <h1 className="primary-color-heading fw-bold text-center-smallScreen reveal fade-bottom">
+      <h1 className="primary-color-heading fw-bold text-center-smallScreen reveal fade-up">
         Our services
       </h1>
       <div className="row ">

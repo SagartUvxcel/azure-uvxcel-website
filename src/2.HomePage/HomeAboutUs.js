@@ -15,7 +15,7 @@ const AboutUsShort = () => {
 
   return (
     <section className="container py-5 ">
-      <h1 className="primary-color-heading fw-bold mb-4 text-center-smallScreen reveal fade-bottom">
+      <h1 className="primary-color-heading fw-bold mb-4 text-center-smallScreen reveal fade-up">
         About us
       </h1>
       <div className="row overflowHide">

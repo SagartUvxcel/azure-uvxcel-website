@@ -7,12 +7,12 @@ import OurTeam from "./OurTeam";
 const AboutUs = () => {
   return (
     <section className="about padding-and-height-for-main-container">
-      <h1 className="primary-color-heading mb-4 text-center fw-bold active fade-bottom">
+      <h1 className="primary-color-heading mb-4 text-center fw-bold active fade-up">
         About Us
       </h1>
       <div className="container">
         <div className="row about-image ">
-          <h2 className="mb-4 fw-bold primary-color-heading text-center-smallScreen active fade-left">
+          <h2 className="mb-4 fw-bold primary-color-heading text-center-smallScreen active fade-up">
             Company Overview
           </h2>
           <div className="about-text active fade-up">

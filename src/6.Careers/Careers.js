@@ -194,7 +194,7 @@ const Careers = () => {
         <section className="container-fluid career-section-top ">
           <div className="careers padding-and-height-for-main-container">
             <div className="container ">
-              <h1 className="careerPage-heading fw-bold text-center mb-4 active fade-bottom">
+              <h1 className="careerPage-heading fw-bold text-center mb-4 active fade-up">
                 Career Opportunities
               </h1>
 

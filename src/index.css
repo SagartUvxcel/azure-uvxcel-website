@@ -1167,11 +1167,18 @@ footer .icons:hover {
   0% {
     transform: translate3d(0, 60px, 0);
     opacity: 0;
+    filter: blur(10px);
+  }
+  50% {
+    filter: blur(5px);
+
   }
 
   100% {
     transform: translate3d(0, 0, 0);
     opacity: 1;
+    filter: blur(1px);
+
   }
 }
 
@@ -1551,9 +1558,6 @@ footer .icons:hover {
 section div.container {
   transition: all 0.3s ease;
 }
-
-
-
 
 section.slide-option {
   margin: 10 0 10px 0;

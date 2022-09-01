@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <section className="services padding-and-height-for-main-container py-5">
       <div className="container ">
-        <h1 className="primary-color-heading text-center fw-bold text-center-smallScreen active fade-bottom">
+        <h1 className="primary-color-heading text-center fw-bold text-center-smallScreen active fade-up">
           Our Services
         </h1>
         <div className="row ">

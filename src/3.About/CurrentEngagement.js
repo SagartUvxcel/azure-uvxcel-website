@@ -5,7 +5,7 @@ const CurrentEngagement = () => {
   return (
     <section className="current-engagement pt-5">
       <div className="container ">
-        <h2 className="primary-color-heading mb-4 fw-bold text-center-smallScreen reveal fade-bottom">
+        <h2 className="primary-color-heading mb-4 fw-bold text-center-smallScreen reveal fade-up">
           Current Engagement
         </h2>
         <div className="row ">
