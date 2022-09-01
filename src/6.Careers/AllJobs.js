@@ -6,11 +6,20 @@ import {
   BsClockHistory,
 } from "react-icons/bs";
 import { MdLocationOn } from "react-icons/md";
+import Loader from "./Loader";
 
-const AllJobs = ({ jobs, daysCount, loadCurrentJob }) => {
+const AllJobs = ({ jobs, daysCount, loadCurrentJob, loading }) => {
   return (
     <>
-      {jobs.length >= 1 ? (
+      {loading ? (
+        <h4 className="my-4 text-center">
+          <Loader />
+        </h4>
+      ) : jobs.length <= 0 ? (
+        <h4 className="my-4 noJobFound text-center text-white">
+          No jobs found
+        </h4>
+      ) : (
         jobs.map((job) => (
           <Link
             style={{ textDecoration: "none" }}
@@ -20,7 +29,9 @@ const AllJobs = ({ jobs, daysCount, loadCurrentJob }) => {
             key={job._id}
           >
             <div className="card-body">
-              <h5 className="card-title text-center-smallScreen">{job.designation}</h5>
+              <h5 className="card-title text-center-smallScreen">
+                {job.designation}
+              </h5>
               <span>
                 <BsFillBriefcaseFill size={15} />
                 <span className="mx-1">{job.experience} Yrs</span>
@@ -49,10 +60,6 @@ const AllJobs = ({ jobs, daysCount, loadCurrentJob }) => {
             </div>
           </Link>
         ))
-      ) : (
-        <h4 className="my-4 text-center text-white">
-          No jobs found
-        </h4>
       )}
     </>
   );

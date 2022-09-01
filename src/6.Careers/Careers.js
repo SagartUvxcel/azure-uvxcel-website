@@ -9,6 +9,7 @@ import NewsLetter from "./NewsLetter";
 import { FiSearch } from "react-icons/fi";
 
 const Careers = () => {
+  const [loading, setLoading] = useState(false);
   const [email, setEmail] = useState("");
   const [emailErr, setEmailErr] = useState(false);
   const [jobs, setJobs] = useState([]);
@@ -34,7 +35,6 @@ const Careers = () => {
   const downToUp = () => {
     if (searchArray[textArrayIndex]) {
       searchPTag.current.innerHTML = searchArray[textArrayIndex];
-
       searchPTag.current.classList.remove("removePlace");
       searchPTag.current.classList.add("setPlace");
       setTimeout(moveUp, 2000);
@@ -55,6 +55,8 @@ const Careers = () => {
   let jobsPerPage = 3;
 
   const getAllJobs = async (location = "all", designation = "all") => {
+    setLoading(true);
+    pagination.current.classList.add("hide");
     // Get all jobs without pagination so that we can get total count of all jobs
     const totalJobs = await axios.get(
       `/get-jobs?location=${location}&search=${designation}`
@@ -65,6 +67,7 @@ const Careers = () => {
       `/get-jobs?location=${location}&search=${designation}&page=1&limit=${jobsPerPage}`
     );
     setJobs(getJobs.data);
+    setLoading(false);
 
     // To set total page count based on jobs per page and total jobs. e.g. if total jobs = 20 and jobs per page = 5 then page count will be 4
     const totalJobsCount = totalJobs.data.length;
@@ -244,6 +247,7 @@ const Careers = () => {
                     jobs={jobs}
                     loadCurrentJob={loadCurrentJob}
                     daysCount={daysCount}
+                    loading={loading}
                   />
                   <div className="row py-2">
                     <div className="col-12" ref={pagination}>

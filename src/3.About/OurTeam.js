@@ -11,7 +11,7 @@ const OurTeam = () => {
         {employees.map((person) => {
           return (
             <div
-              className="col-lg-3 col-md-4 col-6 reveal fade-up"
+              className="col-custom-5 col-md-4 col-6 reveal fade-up"
               key={person.id}
             >
               <div className="card shadow-sm mt-4">
@@ -27,7 +27,7 @@ const OurTeam = () => {
                     {person.name}
                   </h5>
                   <p
-                    className="card-text fw-bold"
+                    className=" designationPara card-text fw-bold"
                     style={{ color: "var(--danger)" }}
                   >
                     {person.designation}

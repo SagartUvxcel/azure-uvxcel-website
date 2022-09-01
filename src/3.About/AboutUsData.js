@@ -56,7 +56,7 @@ export const employees = [
     photo: CG,
     designation: "Founder-Director",
   },
-  { id: "uv002", name: "Director", photo: "", designation: "Director" },
+  { id: "uv002", name: "Rasheed Kannan", photo: "", designation: "Director" },
   { id: "uv003", name: "Monika Korde", photo: MK, designation: "HR Partner" },
   { id: "uv004", name: "Aniket Patil", photo: AP, designation: "Software Engineer" },
   {

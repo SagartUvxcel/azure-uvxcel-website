@@ -6,6 +6,8 @@ import Features from "./Features";
 import HomeAboutUs from "./HomeAboutUs";
 import HomeServices from "./HomeServices";
 import HomeTechnologies from "./HomeTechnologies";
+import CustomersSection from "../3.About/CustomersSection";
+
 
 const Home = () => {
   return (
@@ -90,6 +92,7 @@ const Home = () => {
       <HomeAboutUs />
       <HomeServices />
       <HomeTechnologies />
+      <CustomersSection/>
     </>
   );
 };

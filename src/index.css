@@ -306,7 +306,7 @@
 /* Our Team */
 .our-team .card {
   transition: 0.3s ease-in-out;
-  height: 415px;
+  height: 370px;
 }
 
 .our-team .card:hover,
@@ -322,14 +322,21 @@
 
 .our-team .img-holder {
   overflow: hidden;
-  height: 300px !important;
+  height: 270px !important;
 }
+
+
 
 .our-team .img-holder img {
   height: 100% !important;
   width: 100% !important;
   object-fit: cover;
   object-position: 0 0;
+}
+
+.our-team .designationPara {
+  font-size: 12px !important;
+  font-weight: 400 !important;
 }
 
 /* Styles for Services.js */
@@ -409,6 +416,11 @@
 /* Styles for Careers.js */
 .careers .careerPage-heading {
   color: #fff;
+}
+
+.noJobFound {
+
+  padding-top: 88px;
 }
 
 .career-top-container {
@@ -502,7 +514,7 @@
   visibility: hidden;
 }
 
-.hide{
+.hide {
   visibility: hidden;
 }
 
@@ -593,7 +605,7 @@
 
 .job-description-card .card-body {
   overflow-y: scroll;
-  height: 50vh;
+  height: 60vh;
   margin-top: 11rem !important;
 }
 
@@ -1093,7 +1105,7 @@ footer .icons:hover {
   transition: fade 1s ease-in-out;
 }
 
-.overflowHide{
+.overflowHide {
   overflow: hidden;
 }
 
@@ -1213,11 +1225,31 @@ footer .icons:hover {
   .technology-details .card {
     height: 390px !important;
   }
+
+  .our-team .img-holder {
+    height: 225px !important;
+  }
+
+  .our-team .card {
+    height: 325px;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .col-custom-5 {
+    flex: 0 0 auto;
+    width: 20% !important;
+  }
+  .our-team .card-body h5 {
+    font-size: 1.05rem !important;
+  }
+
 }
 
 @media (max-width: 991px) {
 
- 
+
   .text-center-smallScreen {
     text-align: center;
   }
@@ -1236,10 +1268,34 @@ footer .icons:hover {
   .nav-item>.active:hover {
     border-bottom: none;
   }
-  .country {
+
+  /* .country {
     position: fixed;
     top: 60px;
-}
+  } */
+
+
+
+  .navbar .container-fluid {
+    height: 70px;
+  }
+
+  .navbar .nav-link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .navbar #navbarNav {
+    height: 100%;
+  }
+
+  .navbar ul {
+    height: 100%;
+  }
+
+
+
 
   /* Home */
   .home .carousel-inner {
@@ -1284,11 +1340,16 @@ footer .icons:hover {
   }
 
   .our-team .card {
-    height: auto;
+    height: 391px;
+    text-align: center;
+  }
+
+  .our-team .img-holder {
+    height: 290px !important;
   }
 
   .our-team h5 {
-    font-size: 16px;
+    font-size: 20px !important;
   }
 
   .our-team p {
@@ -1303,37 +1364,17 @@ footer .icons:hover {
 
   /* Careers */
   .job-description-card .card-body {
-    height: 32vh;
+    height: 30vh;
   }
 
   .newsletter {
     width: 80%;
   }
-}
-
-
-@media (min-width: 991px) {
-
-  .navbar .container-fluid {
-    height: 70px;
-  }
-
-  .navbar .nav-link {
-    display: flex;
-    align-items: center;
-    height: 100%;
-  }
-
-  .navbar #navbarNav {
-    height: 100%;
-  }
-
-  .navbar ul {
-    height: 100%;
-  }
 
 
 }
+
+
 
 @media (max-width: 767px) {
 
@@ -1417,9 +1458,14 @@ footer .icons:hover {
     height: fit-content !important;
   }
 
-  /* .our-team .card {
-    height: 245px;
-  } */
+  .our-team .card {
+    height: 416px;
+    text-align: center;
+  }
+
+  .our-team .img-holder {
+    height: 335px !important;
+  }
 
   .technology-details .card {
     height: fit-content !important;
@@ -1455,8 +1501,13 @@ footer .icons:hover {
     padding: 0px 48px;
   }
 
+  .our-team .card {
+    height: 553px;
+    text-align: center;
+  }
+
   .our-team .img-holder {
-    height: 100% !important;
+    height: 471px !important;
   }
 
   .our-team .card-body {
@@ -1466,7 +1517,7 @@ footer .icons:hover {
   }
 
   .our-team h5 {
-    font-size: 25px;
+    font-size: 25px !important;
   }
 }
 
