@@ -1169,6 +1169,7 @@ footer .icons:hover {
     opacity: 0;
     filter: blur(10px);
   }
+
   50% {
     filter: blur(5px);
 
@@ -1221,6 +1222,21 @@ footer .icons:hover {
 /* Media Queries */
 
 @media (max-width: 1024px) {
+
+  .home .carousel-caption-homeImg {
+    margin-bottom: 15.1rem !important;
+  }
+
+  .home .carousel-caption-homeImg h3 {
+    font-size: 3.8rem !important;
+  }
+
+  .home .carousel-caption-homeImg p {
+    padding-top: 0px;
+    font-size: 1.3rem;
+  }
+
+
   .home .carousel-inner {
     height: 635px;
   }
@@ -1248,6 +1264,7 @@ footer .icons:hover {
     flex: 0 0 auto;
     width: 20% !important;
   }
+
   .our-team .card-body h5 {
     font-size: 1.05rem !important;
   }
@@ -1280,29 +1297,6 @@ footer .icons:hover {
     position: fixed;
     top: 60px;
   } */
-
-
-
-  .navbar .container-fluid {
-    height: 70px;
-  }
-
-  .navbar .nav-link {
-    display: flex;
-    align-items: center;
-    height: 100%;
-  }
-
-  .navbar #navbarNav {
-    height: 100%;
-  }
-
-  .navbar ul {
-    height: 100%;
-  }
-
-
-
 
   /* Home */
   .home .carousel-inner {
@@ -1381,6 +1375,25 @@ footer .icons:hover {
 
 }
 
+@media (min-width: 991px) {
+  .navbar .container-fluid {
+    height: 70px;
+  }
+
+  .navbar .nav-link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .navbar #navbarNav {
+    height: 100%;
+  }
+
+  .navbar ul {
+    height: 100%;
+  }
+}
 
 
 @media (max-width: 767px) {
@@ -1396,25 +1409,25 @@ footer .icons:hover {
   }
 
   /* Home */
-  .home .carousel-inner {
+  /* .home .carousel-inner {
     height: 225px;
-  }
+  } */
 
-  .home .carousel-inner img {
+  /* .home .carousel-inner img {
     height: 225px !important;
-  }
+  } */
 
   .home .carousel-caption-homeImg {
-    margin-bottom: 3.1rem !important;
+    margin-bottom: 10.1rem !important;
   }
 
   .home .carousel-caption-homeImg h3 {
-    font-size: 1.3rem !important;
+    font-size: 2.8rem !important;
   }
 
   .home .carousel-caption-homeImg p {
     padding-top: 0px;
-    font-size: 0.7rem;
+    font-size: 1.3rem;
   }
 
   .home .carousel-control-next-icon,
@@ -1502,6 +1515,27 @@ footer .icons:hover {
 }
 
 @media (max-width: 515px) {
+
+  .home .carousel-inner {
+    height: 314px;
+  }
+
+  .home .carousel-inner img {
+    height: 331px !important;
+  }
+
+  .home .carousel-caption-homeImg {
+    margin-bottom: 7.1rem !important;
+  }
+
+  .home .carousel-caption-homeImg h3 {
+    font-size: 1.2rem !important;
+  }
+
+  .home .carousel-caption-homeImg p {
+    padding-top: 0px;
+    font-size: 0.7rem;
+  }
 
   .our-team .col-6 {
     width: 100% !important;
