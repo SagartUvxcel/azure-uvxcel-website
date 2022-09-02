@@ -46,7 +46,11 @@ const AllJobs = ({ jobs, daysCount, loadCurrentJob, loading }) => {
 
               <span>
                 <MdLocationOn />
-                <span className="mx-1">{job.location}</span>
+                <span className="mx-1"> {job.location.split(",").length > 1
+
+                  ? job.location.split(",").join(" & ")
+
+                  : job.location}</span>
               </span>
               <p className="card-text mt-2">
                 {job.skills

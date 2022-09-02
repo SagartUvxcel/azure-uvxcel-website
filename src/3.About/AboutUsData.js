@@ -25,6 +25,7 @@ import GT from "../images/Team_member/Gayatri Tajane.png";
 import MD from "../images/Team_member/Mayuri Dudhe.png";
 import PG from "../images/Team_member/Prapti Gomekar.png";
 import RK from "../images/Team_member/Rasheed Kannan.png";
+import AM from "../images/Team_member/ankit Mishra.png";
 
 
 // Current engagement data
@@ -61,7 +62,7 @@ export const employees = [
   { id: "uv003", name: "Monika Korde", photo: MK, designation: "HR Partner" },
   { id: "uv004", name: "Aniket Patil", photo: AP, designation: "Software Engineer" },
   {
-    id: "uv005", name: "Ankit Mishra", photo: "", designation: "Software Engineer"
+    id: "uv005", name: "Ankit Mishra", photo: AM, designation: "Software Engineer"
   },
   {
     id: "uv006", name: "Dipak Lokhande", photo: DL, designation: "Junior Software Engineer",

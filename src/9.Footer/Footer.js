@@ -110,7 +110,7 @@ const Footer = () => {
                   </div>
                   <div className="col-10">
                     <p>
-                      Unit No. 223,Goodwill SquareMall, Dhanori, Pune,
+                      Unit No. 223, Goodwill SquareMall, Dhanori, Pune,
                       Maharashtra, India
                     </p>
                   </div>
@@ -141,8 +141,8 @@ const Footer = () => {
                   </div>
                   <div className="col-10">
                     <p>
-                      Level 33,Ilham Tower,No.8,Jalan Binjai,50450 Kuala
-                      Lumpur,Malaysia.
+                      Level 33, Ilham Tower, No.8, Jalan Binjai, 50450 Kuala
+                      Lumpur, Malaysia.
                     </p>
                   </div>
                 </div>
