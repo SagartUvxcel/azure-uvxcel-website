@@ -174,7 +174,7 @@ const Careers = () => {
 
   useEffect(() => {
     downToUp();
-  }, []);
+  });
 
   useEffect(() => {
     getAllJobs(jobLocation, searchValue);

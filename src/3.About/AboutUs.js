@@ -1,5 +1,5 @@
 import React from "react";
-import VisionMission from "./VisionMission";
+// import VisionMission from "./VisionMission";
 import CustomersSection from "./CustomersSection";
 import CurrentEngagement from "./CurrentEngagement";
 import OurTeam from "./OurTeam";

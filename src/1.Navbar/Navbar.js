@@ -4,8 +4,8 @@ import img from "../images/uvxcel.png";
 import {} from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
 import { GrMenu } from "react-icons/gr";
-import indiaFlag from "../images/indian flag icon.png";
-import malaysiaFlag from "../images/malaysia flag icon.png";
+// import indiaFlag from "../images/indian flag icon.png";
+// import malaysiaFlag from "../images/malaysia flag icon.png";
 
 const Navbar = () => {
   const [navToggleIcon, setNavToggleIcon] = useState(false);

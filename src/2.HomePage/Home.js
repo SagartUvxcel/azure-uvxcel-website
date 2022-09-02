@@ -2,7 +2,7 @@ import React from "react";
 import img1 from "../images/Slideimg1.jpg";
 import img2 from "../images/Slideimg2.jpg";
 import img3 from "../images/Slideimg3.jpg";
-import Features from "./Features";
+// import Features from "./Features";
 import HomeAboutUs from "./HomeAboutUs";
 import HomeServices from "./HomeServices";
 import HomeTechnologies from "./HomeTechnologies";
