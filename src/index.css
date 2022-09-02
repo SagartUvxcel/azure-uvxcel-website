@@ -1543,12 +1543,15 @@ footer .icons:hover {
   }
 
   .our-team .card {
-    height: 553px;
+    height: fit-content;
     text-align: center;
   }
 
   .our-team .img-holder {
-    height: 471px !important;
+    height: fit-content !important;
+  }
+  .our-team .img-holder img {
+    object-fit: contain !important;
   }
 
   .our-team .card-body {

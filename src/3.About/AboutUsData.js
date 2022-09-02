@@ -24,6 +24,7 @@ import ST from "../images/Team_member/Sagar Tilekar.png";
 import GT from "../images/Team_member/Gayatri Tajane.png";
 import MD from "../images/Team_member/Mayuri Dudhe.png";
 import PG from "../images/Team_member/Prapti Gomekar.png";
+import RK from "../images/Team_member/Rasheed Kannan.png";
 
 
 // Current engagement data
@@ -56,7 +57,7 @@ export const employees = [
     photo: CG,
     designation: "Founder-Director",
   },
-  { id: "uv002", name: "Rasheed Kannan", photo: "", designation: "Director" },
+  { id: "uv002", name: "Rasheed Kannan", photo: RK, designation: "Director, Malaysia" },
   { id: "uv003", name: "Monika Korde", photo: MK, designation: "HR Partner" },
   { id: "uv004", name: "Aniket Patil", photo: AP, designation: "Software Engineer" },
   {
